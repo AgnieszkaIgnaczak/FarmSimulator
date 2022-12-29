@@ -15,7 +15,7 @@ public class Main {
         Scanner scanner3 = new Scanner(System.in);
         int areaOfTheFarm = scanner3.nextInt();
 
-        Farm farm = new Farm(ownerOfTheFarm, addressOfTheFarm, areaOfTheFarm); //new object of type class Farm, values provided by user saved under fields in class Farm
+        Farm farm = new Farm(ownerOfTheFarm, addressOfTheFarm, areaOfTheFarm,0); //new object of type class Farm, values provided by user saved under fields in class Farm
 
         System.out.println("Owner of the farm is: " + farm.owner);
         System.out.println("Address of the farm is: " + farm.getAddress());
@@ -23,5 +23,10 @@ public class Main {
 
         farm.setArea(50);
         System.out.println("New area of the farm is: " + farm.getArea());
+
+        farm.verifyLandRegistrationNr();
+        System.out.println("Land Registration Nr of the farm is: " + farm.getLandRegistrationNr());
+
+        farm.barn.feedingTime(); //get to method from object contained in another object
     }
 }
