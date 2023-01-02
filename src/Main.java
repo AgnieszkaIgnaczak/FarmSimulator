@@ -28,5 +28,13 @@ public class Main {
         System.out.println("Land Registration Nr of the farm is: " + farm.getLandRegistrationNr());
 
         farm.barn.feedingTime(); //get to method from object contained in another object
+
+        Barn.cropTime(); //static method from class Barn
+
+        Dog dog = new Dog(30, "shepherd"); //new object outside Barn 
+
+        Animal.getCount(); //return the number of animals in the farm
+        System.out.println("This is the number of animals in the farm: " + Animal.getCount());
+
     }
 }

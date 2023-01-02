@@ -13,7 +13,7 @@ public class Farm extends RealEstate {
         this.owner = new Person(ow); //value from argument ow is saved in class field owner
         //composition = class Farm uses class Person = object of type Farm will have 1 field of type Person
         this.setArea(ar); //using setter to check if passed argument is correct
-        this.barn = new Barn(); //new object of type Barn, for testing
+        this.barn = new Barn(); //new object of type Barn, for testing //animal counter starts here
     }
 
     public int getArea() {
@@ -31,4 +31,6 @@ public class Farm extends RealEstate {
     public void verifyLandRegistrationNr() {
         super.landRegistrationNr = super.getRandomLandRegistrationNr(1,100);
     }
+
+
 }
