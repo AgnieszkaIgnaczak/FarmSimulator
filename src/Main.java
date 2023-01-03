@@ -31,10 +31,16 @@ public class Main {
 
         Barn.cropTime(); //static method from class Barn
 
-        Dog dog = new Dog(30, "shepherd"); //new object outside Barn 
+        Dog dog = new Dog(30, "shepherd"); //new object outside Barn
 
         Animal.getCount(); //return the number of animals in the farm
         System.out.println("This is the number of animals in the farm: " + Animal.getCount());
 
+        CatMother catMother = new CatMother("grey");
+        CatMother.Kittens kittens = new CatMother.Kittens(5);
+        CatMother.FeedingBowl bowl = catMother.new FeedingBowl(6);
+        bowl.fillTheBowl(6);
+        kittens.lickKittens();
+        bowl.colorOfTheCat();
     }
 }
