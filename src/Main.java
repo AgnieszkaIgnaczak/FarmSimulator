@@ -42,5 +42,10 @@ public class Main {
         bowl.fillTheBowl(6);
         kittens.lickKittens();
         bowl.colorOfTheCat();
+
+        //new instance of class Harvesting created in order to run the harvesting method which includes the local class Harvester
+        Harvesting harvestTime = new Harvesting(); //empty object, constructor automatically created and transparent for programmer
+        harvestTime.harvesting();
+
     }
 }

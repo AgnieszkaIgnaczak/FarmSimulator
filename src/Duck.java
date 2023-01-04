@@ -18,4 +18,5 @@ public class Duck extends Animal{
     public void feed(){
         System.out.println("Kwakwakwa!");
     }
+
 }
