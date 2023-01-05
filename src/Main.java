@@ -47,5 +47,8 @@ public class Main {
         Harvesting harvestTime = new Harvesting(); //empty object, constructor automatically created and transparent for programmer
         harvestTime.harvesting();
 
+        //method run on barn object which was instantiated in Farm constructor which was invoked in Main class
+        farm.barn.isThereAFoxInTheBarn(); 
+
     }
 }

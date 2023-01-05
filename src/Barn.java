@@ -24,4 +24,19 @@ public class Barn { //container for animals
     public static void cropTime(){ //cropTime static method calling method harvestingTime from class Harvesting
         Harvesting.harvestingTime();
     }
+
+    //method which contains anonymous class of type Animal
+    public boolean isThereAFoxInTheBarn() {
+
+        //new anonymous class declared
+        Animal fox = new Animal(14) {
+            @Override
+            public void feed() {
+                System.out.println("Fox hidden in the barn!");
+            } //original method from class Animal
+        };
+
+        fox.feed(); //method feed taken and run on fox object
+        return true; //for boolean purpose
+    }
 }
