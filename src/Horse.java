@@ -18,4 +18,9 @@ public class Horse extends Animal{
     public void feed(){
         System.out.println("Iiiiihahahaaaaaa!");
     }
+
+    @Override
+    public void canAnAnimalSwim() {
+        System.out.println("Horse can swim quite good.");
+    }
 }

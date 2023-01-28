@@ -19,4 +19,8 @@ public class Duck extends Animal{
         System.out.println("Kwakwakwa!");
     }
 
+    @Override
+    public void canAnAnimalSwim() {
+        System.out.println("Duck can swim very good.");
+    }
 }

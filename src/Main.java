@@ -48,7 +48,32 @@ public class Main {
         harvestTime.harvesting();
 
         //method run on barn object which was instantiated in Farm constructor which was invoked in Main class
-        farm.barn.isThereAFoxInTheBarn(); 
+        farm.barn.isThereAFoxInTheBarn();
 
+        //abstract method
+        Aquaculture aquaculture = new Aquaculture();
+
+        for (Animal a : farm.barn.getAnimals()) { //zmienna pomocnicza a typu Animal, która wskazuje na 1 z elementów tablicy animals
+            aquaculture.swimInAPond(a);
+        }
+
+        //lub
+        Animal[] table = farm.barn.getAnimals(); //zmienna pomocnicza table, która zapamiętuje listę zwierząt z Barn poprzez getter
+        for (int i = 1; i <= 4; i++) {
+            aquaculture.swimInAPond(table[i]); //każda iteracja bierze inne zwierzę z tablicy i przekazuje jako argument do funkcji swimInAPond
+        }
+
+        //static method invoked on abstract class Pond and child class Aquaculture
+        Pond.drinkWater();
+        Aquaculture.drinkWater();
+
+        //value 6 only for 1st object aquaculture
+        System.out.println("Plant value from Pond: " + aquaculture.plantValue);
+        aquaculture.plantValue += 4;
+        System.out.println("Plant value from Pond: " + aquaculture.plantValue);
+
+        //original plantValue for 2nd object
+        Aquaculture aquaculture2 = new Aquaculture();
+        System.out.println("Plant value from Pond: " + aquaculture2.plantValue);
     }
 }

@@ -16,4 +16,8 @@ public class Animal {
     public static int getCount() {
         return count;
     }
+
+    public void canAnAnimalSwim() {
+        System.out.println("I do not know.");
+    }
 }

@@ -39,4 +39,8 @@ public class Barn { //container for animals
         fox.feed(); //method feed taken and run on fox object
         return true; //for boolean purpose
     }
+
+    public Animal[] getAnimals() { //getter, dostęp do listy zwierząt
+        return animals;
+    }
 }

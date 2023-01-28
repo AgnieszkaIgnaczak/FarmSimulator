@@ -4,7 +4,7 @@ public class Farm extends RealEstate {
     public Person owner;
     private int area = 0; //0 does not have to be provided
 
-    public Barn barn;
+    public Barn barn; // object of type farm has an object of type barn, if a table with animals in present in Barn class, it is also present in Farm class
 
     //constructor with 4 arguments
     Farm(String ow, String ad, int ar, int lr) { //alle collected arguments from base class + new

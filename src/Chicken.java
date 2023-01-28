@@ -18,4 +18,9 @@ public class Chicken extends Animal{
     public void feed(){
         System.out.println("Kokokokoko!");
     }
+
+    @Override
+    public void canAnAnimalSwim() {
+        System.out.println("Chicken can swim.");
+    }
 }
